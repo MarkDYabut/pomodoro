@@ -13,6 +13,7 @@ export default function HTML(props) {
         />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="screen-orientation" content="portrait" />
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
 
         {props.headComponents}
       </head>
