@@ -9,11 +9,9 @@ export default function HTML(props) {
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
           name="viewport"
-          content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, autoRotate=disabled, screen-orientation=portrait"
         />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="screen-orientation" content="portrait" />
-        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
 
         {props.headComponents}
       </head>
