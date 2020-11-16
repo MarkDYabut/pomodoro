@@ -35,9 +35,7 @@ export default function UsersList() {
   return (
     <Layout>
       <h1>Pomodoro Clock</h1>
-      <p>Commit to something</p>
-      <p>or</p>
-      <p>be distracted by everything</p>
+      <p>commit to something or be distracted by everything</p>
       <Button to="/app">Start</Button>
     </Layout>
   )
