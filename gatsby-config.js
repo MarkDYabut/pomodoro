@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Focus`,
-        short_name: `Focus`,
+        name: `Level Up`,
+        short_name: `Level Up`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
