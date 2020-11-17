@@ -4,14 +4,14 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 const Container = styled.div`
-  margin: 3rem auto;
+  margin: 4rem auto;
+  margin-bottom: 5rem;
   max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
 `
 
 const Layout = ({ children }) => {
