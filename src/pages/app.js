@@ -150,7 +150,9 @@ const App = () => {
         decrementFocusLengthByOneMinute={decrementFocusLengthByOneMinute}
         incrementFocusLengthByOneMinute={incrementFocusLengthByOneMinute}
       />
-
+      <br />
+      <br />
+      <br />
       <Quotes>
         <p>"value of time itself is dictated by how well it is used"</p>
         <p>"commit to something or be distracted by everything"</p>
