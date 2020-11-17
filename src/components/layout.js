@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 const Container = styled.div`
   margin: 4rem auto;
-  margin-bottom: 5rem;
+  margin-bottom: 100px;
   max-width: 600px;
   display: flex;
   flex-direction: column;
