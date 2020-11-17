@@ -137,7 +137,9 @@ const App = () => {
       <h2>
         <i>"life is a game, level up"</i>
       </h2>
-
+      <Button id="reset" onClick={handleResetButtonClick}>
+        Reset
+      </Button>
       <Break
         breakLength={breakLength}
         decrementBreakLengthByOneMinute={decrementBreakLengthByOneMinute}
@@ -148,9 +150,7 @@ const App = () => {
         decrementFocusLengthByOneMinute={decrementFocusLengthByOneMinute}
         incrementFocusLengthByOneMinute={incrementFocusLengthByOneMinute}
       />
-      <Button id="reset" onClick={handleResetButtonClick}>
-        Reset
-      </Button>
+
       <Quotes>
         <p>"value of time itself is dictated by how well it is used"</p>
         <p>"commit to something or be distracted by everything"</p>
