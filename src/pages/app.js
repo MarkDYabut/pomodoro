@@ -39,15 +39,22 @@ const Button = styled.button`
 
 const App = () => {
   const audioElement = useRef(null)
-  const [breakLength, setBreakLength] = useState(60 * 5)
-  const [focusLength, setFocusLength] = useState(60 * 25)
+  const [breakLength, setBreakLength] = useState(60 * 2)
+  const [focusLength, setFocusLength] = useState(60 * 2)
   const [currentFocusType, setCurrentFocusType] = useState("Levelling")
   const [intervalId, setIntervalId] = useState(null)
   const [timeLeft, setTimeLeft] = useState(focusLength)
+  const [action, setAction] = useState("start")
   //
   useEffect(() => {
-    setTimeLeft(focusLength)
-  }, [focusLength])
+    if (currentFocusType === "Levelling") {
+      setTimeLeft(focusLength)
+    } else {
+      setTimeLeft(breakLength)
+    }
+    setAction("start")
+    console.log(currentFocusType)
+  }, [currentFocusType, action])
 
   const isStarted = intervalId != null
 
@@ -77,7 +84,7 @@ const App = () => {
             return focusLength
           }
         })
-      }, 1000)
+      }, 100)
       setIntervalId(newIntervalId)
     }
   }
@@ -125,6 +132,22 @@ const App = () => {
     }
   }
 
+  const handleStateButtonClick = () => {
+    if (currentFocusType === "Levelling") {
+      // switch to break focus
+      setCurrentFocusType("Break")
+    } else if (currentFocusType === "Break") {
+      setCurrentFocusType("Levelling")
+    }
+    console.log("current state: " + currentFocusType)
+  }
+
+  const handleUpdateButtonClick = () => {
+    setFocusLength(focusLength)
+    setBreakLength(breakLength)
+    setAction("Update")
+  }
+
   return (
     <Layout>
       <TimeLeft
@@ -133,13 +156,13 @@ const App = () => {
         startStopButtonLabel={isStarted ? "Stop" : "Start"}
         timeLeft={timeLeft}
       />
-      <br />
+      <Button id="state" onClick={handleStateButtonClick}>
+        Change State
+      </Button>
       <h2>
         <i>"life is a game, level up"</i>
       </h2>
-      <Button id="reset" onClick={handleResetButtonClick}>
-        Reset
-      </Button>
+      <br />
       <Break
         breakLength={breakLength}
         decrementBreakLengthByOneMinute={decrementBreakLengthByOneMinute}
@@ -150,6 +173,13 @@ const App = () => {
         decrementFocusLengthByOneMinute={decrementFocusLengthByOneMinute}
         incrementFocusLengthByOneMinute={incrementFocusLengthByOneMinute}
       />
+      <br />
+      <Button id="update" onClick={handleUpdateButtonClick}>
+        Update
+      </Button>
+      <Button id="reset" onClick={handleResetButtonClick}>
+        Reset
+      </Button>
       <br />
       <br />
       <br />
