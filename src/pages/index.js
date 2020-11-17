@@ -36,6 +36,7 @@ const Quotes = styled.div`
 
 const Ul = styled.ul`
   list-style: none;
+  text-align: left;
 `
 
 export default function UsersList() {
