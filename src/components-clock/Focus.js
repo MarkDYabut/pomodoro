@@ -38,7 +38,7 @@ const Focus = ({
 
   return (
     <div>
-      <p id="focus-label">Focus Time</p>
+      <p id="focus-label">Levelling Time</p>
       <p id="focus-label">{focusLengthInMinutes}</p>
       <Button id="focus-decrement" onClick={decrementFocusLengthByOneMinute}>
         -
