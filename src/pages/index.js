@@ -34,9 +34,8 @@ const Quotes = styled.div`
   font-style: italic;
 `
 
-const Ul = styled.ul`
-  list-style: none;
-  text-align: left;
+const List = styled.div`
+  /* text-align: left; */
 `
 
 export default function UsersList() {
@@ -67,25 +66,26 @@ export default function UsersList() {
           used in software design; the method has been adopted in pair
           programming contexts."
         </p>
+        <br />
         <p>
           "There are six steps in the original technique:
-          <Ul>
-            <li>1. Decide on the task to be done</li>
-            <li>2. Set the pomodoro timer (traditionally to 25 minutes)</li>
-            <li>3. Work on the task</li>
-            <li>
+          <List>
+            <p>1. Decide on the task to be done</p>
+            <p>2. Set the pomodoro timer (traditionally to 25 minutes)</p>
+            <p>3. Work on the task</p>
+            <p>
               4. End work when the timer rings and put a checkmark on a piece of
               paper
-            </li>
-            <li>
+            </p>
+            <p>
               5. If you have fewer than four checkmarks, take a short break (3–5
               minutes) and then return to step 2; otherwise continue to step 6
-            </li>
-            <li>
+            </p>
+            <p>
               6. After four pomodoros, take a longer break (15–30 minutes),
               reset your checkmark count to zero, then go to step 1"
-            </li>
-          </Ul>
+            </p>
+          </List>
         </p>
       </Quotes>
     </Layout>
