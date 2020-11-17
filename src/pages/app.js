@@ -39,8 +39,8 @@ const Button = styled.button`
 
 const App = () => {
   const audioElement = useRef(null)
-  const [breakLength, setBreakLength] = useState(60 * 2)
-  const [focusLength, setFocusLength] = useState(60 * 2)
+  const [breakLength, setBreakLength] = useState(60 * 5)
+  const [focusLength, setFocusLength] = useState(60 * 25)
   const [currentFocusType, setCurrentFocusType] = useState("Levelling")
   const [intervalId, setIntervalId] = useState(null)
   const [timeLeft, setTimeLeft] = useState(focusLength)
@@ -84,7 +84,7 @@ const App = () => {
             return focusLength
           }
         })
-      }, 100)
+      }, 1000)
       setIntervalId(newIntervalId)
     }
   }
