@@ -58,7 +58,14 @@ export default function Home() {
     //   s: date.getSeconds() - startTime.s,
     // })
     setElapsedTime({
-      m: date.getMinutes() - startTime.m,
+      m:
+        (((date.getHours() * 60 * 60 +
+          date.getMinutes() * 60 +
+          date.getSeconds() -
+          (startTime.h * 60 * 60 + startTime.m * 60 + startTime.s)) /
+          60.0) |
+          0) %
+        60,
       h: date.getHours() - startTime.h,
       ms: date.getMilliseconds() - startTime.ms,
       s:
