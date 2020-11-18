@@ -42,7 +42,7 @@ export default function UsersList() {
   return (
     <Layout>
       <h1>Pomodoro</h1>
-      <Button to="/app">Start</Button>
+      <Button to="/app">Start</Button> <Button to="/timer">Beta Testing</Button>
       <Quotes>
         <p>
           The Pomodoro Technique is a time management method developed by
