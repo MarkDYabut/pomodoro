@@ -87,7 +87,10 @@ export default function Home() {
       </p>
       <p>
         Efficiency:{" "}
-        {((totalRun + runTime.ms) / (currentTime.ms - startTime.ms)) * 100}
+        {Math.ceil(
+          ((totalRun + runTime.ms) / (currentTime.ms - startTime.ms)) * 100
+        )}
+        %
       </p>
       {/* <Quotes>
         <p>"value of time itself is dictated by how well it is used"</p>
