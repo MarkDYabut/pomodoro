@@ -41,7 +41,7 @@ const List = styled.div`
 export default function UsersList() {
   return (
     <Layout>
-      <h1>Tool kit</h1>
+      <h1>Tool Kit</h1>
       <p>
         A set of productivity tools. Configured as a (
         <a
