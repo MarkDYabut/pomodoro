@@ -85,6 +85,10 @@ export default function Home() {
         {Math.floor(Math.ceil(totalPause / 1000) / 60) % 60}:
         {Math.ceil(totalPause / 1000) % 60}
       </p>
+      <p>
+        Efficiency:{" "}
+        {((totalRun + runTime.ms) / (currentTime.ms - startTime.ms)) * 100}
+      </p>
       {/* <Quotes>
         <p>"value of time itself is dictated by how well it is used"</p>
         <p>"commit to something or be distracted by everything"</p>

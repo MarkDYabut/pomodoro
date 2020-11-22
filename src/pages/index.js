@@ -55,7 +55,7 @@ export default function UsersList() {
         state. Unlike the Pomodoro Timer which uses setInterval() to calculate
         time, this tool uses the Date() object, which means that the timer will
         work and remain accurate even when the application is minimized. <br />
-        Use-case: figuring out where the fuck your time is going -> ie: sleep.
+        Use-case: figuring out where your time is going -> ie: sleep.
       </p>
     </Layout>
   )

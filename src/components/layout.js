@@ -15,7 +15,14 @@ const Container = styled.div`
 `
 
 const Layout = ({ children }) => {
-  return <Container>{children}</Container>
+  return (
+    <Container>
+      {children}
+      <br />
+      <p>version 0.11</p>
+      <p>made by mark yabut</p>
+    </Container>
+  )
 }
 
 // Layout.propTypes = {
