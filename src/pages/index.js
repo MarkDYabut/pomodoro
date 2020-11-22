@@ -42,20 +42,33 @@ export default function UsersList() {
   return (
     <Layout>
       <h1>Tool kit</h1>
+      <p>
+        A set of productivity tools. Configured as a (
+        <a
+          target="_blank"
+          href="https://markyabut.com/tech/tp-1progressive-web-applications"
+        >
+          progress web application
+        </a>
+        ). Made with modern web technologies such as ReactJS and GatsbyJS.
+      </p>
       <Button to="/app">Pomodoro Timer</Button>
       <p>
         Pomodoro Timer is a countdown timer that utilizes the "Pomodoro
         Technique." <br />
-        Use-case: getting work done.
+        Use-case: getting work done. <br />
+        Difficulty: Beginner
       </p>
       <Button to="/app2">Run / Pause Timer</Button>
       <p>
         Run / Pause Timer is a timer that has 2 operating states called Running
         and Paused. An internal clock will sum the total time spent in each
         state. Unlike the Pomodoro Timer which uses setInterval() to calculate
-        time, this tool uses the Date() object, which means that the timer will
-        work and remain accurate even when the application is minimized. <br />
-        Use-case: figuring out where your time is going -> ie: sleep.
+        time, this tool uses the Javascript Date() object, which means that the
+        timer will work and remain accurate even when the application is
+        minimized. <br />
+        Use-case: figuring out where your time is going -> ie: sleep. <br />
+        Difficulty: Intermediate
       </p>
     </Layout>
   )

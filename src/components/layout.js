@@ -20,7 +20,13 @@ const Layout = ({ children }) => {
       {children}
       <br />
       <p>version 0.11</p>
-      <p>made by mark yabut</p>
+      <p>
+        made by (
+        <a target="_blank" href="https://markyabut.com/">
+          mark yabut
+        </a>
+        )
+      </p>
     </Container>
   )
 }
