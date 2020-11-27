@@ -57,7 +57,6 @@ export default function UsersList() {
         Pomodoro Timer is a countdown timer that utilizes the "Pomodoro
         Technique." <br />
         Use-case: getting work done. <br />
-        Difficulty: Beginner
       </p>
       <Button to="/app2">Run / Pause Timer</Button>
       <p>
@@ -68,7 +67,6 @@ export default function UsersList() {
         timer will work and remain accurate even when the application is
         minimized. <br />
         Use-case: figuring out where your time is going -> ie: sleep. <br />
-        Difficulty: Intermediate
       </p>
     </Layout>
   )
