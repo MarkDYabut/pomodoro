@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
-import Layout from "../components/Layout"
-import ToDo from "../components/ToDo"
+import Layout from "../components/layout"
+import ToDo from "../components/todo"
 
 export default function Home() {
   const [status, setStatus] = useState("Initialize")
