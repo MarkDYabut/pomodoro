@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
+import Experiments from "./experiments"
 
 const Container = styled.div`
   margin: 4rem auto;

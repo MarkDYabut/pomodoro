@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react"
+import styled from "styled-components"
+
 import Layout from "../components/layout"
 import ToDo from "../components/todo"
+import Experiments from "../components/experiments"
 
 export default function Home() {
   const [status, setStatus] = useState("Initialize")
@@ -49,6 +52,8 @@ export default function Home() {
   }
   return (
     <Layout>
+            <Experiments>
+
       <h1>State: {status}</h1>
       <button onClick={handleStateButton}>Change State</button>
 
@@ -90,8 +95,8 @@ export default function Home() {
         )}
         %
       </p>
-      <h1>To Do List</h1>
       <ToDo />
+      </Experiments>
     </Layout>
   )
 }

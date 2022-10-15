@@ -68,8 +68,8 @@ function App() {
   return (
     <div className="app">
       <div className="todo-list">
+        <h1>To Do List</h1>
         <TodoForm addTodo={addTodo} />
-
         {todos.map((todo, index) => (
           <Todo
             key={index}

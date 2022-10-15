@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
+import Experiments from "../components/experiments"
 
 const Button = styled(Link)`
   box-shadow: inset 0px 1px 0px 0px #ffffff;
@@ -68,6 +69,16 @@ export default function UsersList() {
         minimized. <br />
         Use-case: figuring out where your time is going -> ie: sleep. <br />
       </p>
+      <Experiments>
+        <h2>Everything below is experimental</h2>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+      </Experiments>
     </Layout>
   )
 }

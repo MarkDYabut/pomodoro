@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from "react"
-import Break from "../components-clock/Break"
-import Focus from "../components-clock/Focus"
-import TimeLeft from "../components-clock/TimeLeft"
-import Layout from "../components/layout"
 import styled from "styled-components"
+
+import Break from "../components-app/Break"
+import Focus from "../components-app/Focus"
+import TimeLeft from "../components-app/TimeLeft"
+
+import Layout from "../components/layout"
 
 const Quotes = styled.div`
   font-style: italic;
