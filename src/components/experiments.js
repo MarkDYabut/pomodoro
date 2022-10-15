@@ -25,7 +25,7 @@ function Experiments({children}) {
 
   return (
     <>
-      <h2>Experimental</h2>
+      <h2>Experimental Themes</h2>
       <button onClick={handleClick}>change theme</button>
       {isActive && 
         <StyledDivDark>
