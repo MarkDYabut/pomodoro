@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Break from "../components-app/Break"
 import Focus from "../components-app/Focus"
 import TimeLeft from "../components-app/TimeLeft"
+import Experiments from "../components/experiments"
 
 import Layout from "../components/layout"
 
@@ -152,90 +153,92 @@ const App = () => {
 
   return (
     <Layout>
-      <TimeLeft
-        handleStartStopClick={handleStartStopClick}
-        timerLabel={currentFocusType}
-        startStopButtonLabel={isStarted ? "Stop" : "Start"}
-        timeLeft={timeLeft}
-      />
-      <button id="state" onClick={handleStateButtonClick}>
-        Change State
-      </button>
-      <h2>
-        <i>"life is a game, level up"</i>
-      </h2>
-      <br />
-      <Break
-        breakLength={breakLength}
-        decrementBreakLengthByOneMinute={decrementBreakLengthByOneMinute}
-        incrementBreakLengthByOneMinute={incrementBreakLengthByOneMinute}
-      />
-      <Focus
-        focusLength={focusLength}
-        decrementFocusLengthByOneMinute={decrementFocusLengthByOneMinute}
-        incrementFocusLengthByOneMinute={incrementFocusLengthByOneMinute}
-      />
-      <br />
-      <button id="update" onClick={handleUpdateButtonClick}>
-        Update
-      </button>
-      <button id="reset" onClick={handleResetButtonClick}>
-        Reset
-      </button>
-      <br />
-
-      <Quotes>
-        <p>
-          The Pomodoro Technique is a time management method developed by
-          Francesco Cirillo in the late 1980s. The technique uses a timer to
-          break down work into intervals, traditionally 25 minutes in length,
-          separated by short breaks. Each interval is known as a pomodoro, from
-          the Italian word for 'tomato', after the tomato-shaped kitchen timer
-          that Cirillo used as a university student. (
-          <a
-            target="_blank"
-            href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
-          >
-            wiki
-          </a>
-          )
-        </p>
-        <p>
-          "The technique has been widely popularized by dozens of apps and
-          websites providing timers and instructions. Closely related to
-          concepts such as timeboxing and iterative and incremental development
-          used in software design; the method has been adopted in pair
-          programming contexts."
-        </p>
-        <p>
-          "There are six steps in the original technique:
-          <div>
-            <p>1. Decide on the task to be done</p>
-            <p>2. Set the pomodoro timer (traditionally to 25 minutes)</p>
-            <p>3. Work on the task</p>
-            <p>
-              4. End work when the timer rings and put a checkmark on a piece of
-              paper
-            </p>
-            <p>
-              5. If you have fewer than four checkmarks, take a short break (3–5
-              minutes) and then return to step 2; otherwise continue to step 6
-            </p>
-            <p>
-              6. After four pomodoros, take a longer break (15–30 minutes),
-              reset your checkmark count to zero, then go to step 1"
-            </p>
-          </div>
-        </p>
-      </Quotes>
-      <br />
-      <br />
-      <audio id="beep" ref={audioElement}>
-        <source
-          src="https://onlineclock.net/audio/options/default.mp3"
-          type="audio/mpeg"
+        <Experiments>
+        <TimeLeft
+          handleStartStopClick={handleStartStopClick}
+          timerLabel={currentFocusType}
+          startStopButtonLabel={isStarted ? "Stop" : "Start"}
+          timeLeft={timeLeft}
         />
-      </audio>
+        <button id="state" onClick={handleStateButtonClick}>
+          Change State
+        </button>
+        <h2>
+          <i>"life is a game, level up"</i>
+        </h2>
+        <br />
+        <Break
+          breakLength={breakLength}
+          decrementBreakLengthByOneMinute={decrementBreakLengthByOneMinute}
+          incrementBreakLengthByOneMinute={incrementBreakLengthByOneMinute}
+        />
+        <Focus
+          focusLength={focusLength}
+          decrementFocusLengthByOneMinute={decrementFocusLengthByOneMinute}
+          incrementFocusLengthByOneMinute={incrementFocusLengthByOneMinute}
+        />
+        <br />
+        <button id="update" onClick={handleUpdateButtonClick}>
+          Update
+        </button>
+        <button id="reset" onClick={handleResetButtonClick}>
+          Reset
+        </button>
+        <br />
+
+        <Quotes>
+          <p>
+            The Pomodoro Technique is a time management method developed by
+            Francesco Cirillo in the late 1980s. The technique uses a timer to
+            break down work into intervals, traditionally 25 minutes in length,
+            separated by short breaks. Each interval is known as a pomodoro, from
+            the Italian word for 'tomato', after the tomato-shaped kitchen timer
+            that Cirillo used as a university student. (
+            <a
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
+            >
+              wiki
+            </a>
+            )
+          </p>
+          <p>
+            "The technique has been widely popularized by dozens of apps and
+            websites providing timers and instructions. Closely related to
+            concepts such as timeboxing and iterative and incremental development
+            used in software design; the method has been adopted in pair
+            programming contexts."
+          </p>
+          <p>
+            "There are six steps in the original technique:
+            <div>
+              <p>1. Decide on the task to be done</p>
+              <p>2. Set the pomodoro timer (traditionally to 25 minutes)</p>
+              <p>3. Work on the task</p>
+              <p>
+                4. End work when the timer rings and put a checkmark on a piece of
+                paper
+              </p>
+              <p>
+                5. If you have fewer than four checkmarks, take a short break (3–5
+                minutes) and then return to step 2; otherwise continue to step 6
+              </p>
+              <p>
+                6. After four pomodoros, take a longer break (15–30 minutes),
+                reset your checkmark count to zero, then go to step 1"
+              </p>
+            </div>
+          </p>
+        </Quotes>
+        <br />
+        <br />
+        <audio id="beep" ref={audioElement}>
+          <source
+            src="https://onlineclock.net/audio/options/default.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+      </Experiments>
     </Layout>
   )
 }
