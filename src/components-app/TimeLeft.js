@@ -32,7 +32,7 @@ const Button = styled.button`
 
 const Banner = styled.div`
   margin: 4rem auto;
-  font-size: 300%;
+  font-size: 200%;
 `
 
 momentDurationFormatSetup(moment)
@@ -50,9 +50,11 @@ const TimeLeft = ({
   return (
     <div>
       <Banner id="timer-label">
-        {timerLabel}
-        <br />
-        {formattedTimeLeft}
+        <h1>
+          {timerLabel}
+          <br />
+          {formattedTimeLeft}
+        </h1>
       </Banner>
       <Button onClick={handleStartStopClick}>{startStopButtonLabel}</Button>
     </div>

@@ -1,6 +1,8 @@
 import React, {useState} from "react"
 import styled from "styled-components"
 
+import './experiments.css';
+
 const StyledDivLight = styled.div`
   background-color: white;
   color: black;
@@ -25,18 +27,26 @@ function Experiments({children}) {
 
   return (
     <>
-      <h2>Experimental Themes</h2>
+      <div>
+        <h2>Experimental Themes</h2>
+        <p>sup</p>
+        <p>sup</p>
+        <p>sup</p>
+        <p>sup</p>
+      </div>
       <button onClick={handleClick}>change theme</button>
       {isActive && 
         <StyledDivDark>
-          <StyledDiv>
+          <StyledDiv id="test">
+            <p>what's your name</p>
             {children}
           </StyledDiv>
         </StyledDivDark>
       }
       {!isActive && 
         <StyledDivLight>
-          <StyledDiv>
+          <StyledDiv id="test">
+            <p>what's your name</p>
             {children}
           </StyledDiv>
         </StyledDivLight>
