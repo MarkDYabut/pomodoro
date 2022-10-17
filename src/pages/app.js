@@ -153,6 +153,8 @@ const App = () => {
 
   return (
     <Layout>
+        <h1>App</h1>
+        <p>Pomodoro timer app.</p>
         <Experiments>
         <TimeLeft
           handleStartStopClick={handleStartStopClick}

@@ -52,50 +52,53 @@ export default function Home() {
   }
   return (
     <Layout>
-            <Experiments>
+      <h1>App2</h1>
+      <p>Efficiency timer and todo list app.</p>
+      <Experiments>
+        <h1>State: {status}</h1>
+        <button onClick={handleStateButton}>Change State</button>
 
-      <h1>State: {status}</h1>
-      <button onClick={handleStateButton}>Change State</button>
-
-      <p>
-        Elapsed Time:{" "}
-        {Math.floor(
-          (Math.ceil((currentTime.ms - startTime.ms) / 1000) / 3600) % 60
-        )}
-        :
-        {Math.floor(Math.ceil((currentTime.ms - startTime.ms) / 1000) / 60) %
-          60}
-        :{Math.ceil((currentTime.ms - startTime.ms) / 1000) % 60}
-      </p>
-      <p>
-        Run Time: {Math.floor((Math.ceil(runTime.ms / 1000) / 3600) % 60)}:
-        {Math.floor(Math.ceil(runTime.ms / 1000) / 60) % 60}:
-        {Math.ceil(runTime.ms / 1000) % 60}
-      </p>
-      <p>
-        Pause Time: {Math.floor((Math.ceil(pauseTime.ms / 1000) / 3600) % 60)}:
-        {Math.floor(Math.ceil(pauseTime.ms / 1000) / 60) % 60}:
-        {Math.ceil(pauseTime.ms / 1000) % 60}
-      </p>
-      <p>
-        Total Run Time: {Math.floor((Math.ceil(totalRun / 1000) / 3600) % 60)}:
-        {Math.floor(Math.ceil(totalRun / 1000) / 60) % 60}:
-        {Math.ceil(totalRun / 1000) % 60}
-      </p>
-      <p>
-        Total Pause Time:{" "}
-        {Math.floor((Math.ceil(totalPause / 1000) / 3600) % 60)}:
-        {Math.floor(Math.ceil(totalPause / 1000) / 60) % 60}:
-        {Math.ceil(totalPause / 1000) % 60}
-      </p>
-      <p>
-        Efficiency:{" "}
-        {Math.ceil(
-          ((totalRun + runTime.ms) / (currentTime.ms - startTime.ms)) * 100
-        )}
-        %
-      </p>
-      <ToDo />
+        <p>
+          Elapsed Time:{" "}
+          {Math.floor(
+            (Math.ceil((currentTime.ms - startTime.ms) / 1000) / 3600) % 60
+          )}
+          :
+          {Math.floor(Math.ceil((currentTime.ms - startTime.ms) / 1000) / 60) %
+            60}
+          :{Math.ceil((currentTime.ms - startTime.ms) / 1000) % 60}
+        </p>
+        <p>
+          Run Time: {Math.floor((Math.ceil(runTime.ms / 1000) / 3600) % 60)}:
+          {Math.floor(Math.ceil(runTime.ms / 1000) / 60) % 60}:
+          {Math.ceil(runTime.ms / 1000) % 60}
+        </p>
+        <p>
+          Pause Time: {Math.floor((Math.ceil(pauseTime.ms / 1000) / 3600) % 60)}:
+          {Math.floor(Math.ceil(pauseTime.ms / 1000) / 60) % 60}:
+          {Math.ceil(pauseTime.ms / 1000) % 60}
+        </p>
+        <p>
+          Total Run Time: {Math.floor((Math.ceil(totalRun / 1000) / 3600) % 60)}:
+          {Math.floor(Math.ceil(totalRun / 1000) / 60) % 60}:
+          {Math.ceil(totalRun / 1000) % 60}
+        </p>
+        <p>
+          Total Pause Time:{" "}
+          {Math.floor((Math.ceil(totalPause / 1000) / 3600) % 60)}:
+          {Math.floor(Math.ceil(totalPause / 1000) / 60) % 60}:
+          {Math.ceil(totalPause / 1000) % 60}
+        </p>
+        <p>
+          Efficiency:{" "}
+          {Math.ceil(
+            ((totalRun + runTime.ms) / (currentTime.ms - startTime.ms)) * 100
+          )}
+          %
+        </p>
+      </Experiments>
+      <Experiments>
+        <ToDo />
       </Experiments>
     </Layout>
   )
