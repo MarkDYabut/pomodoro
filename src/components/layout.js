@@ -7,7 +7,7 @@ import GitInfo from 'react-git-info/macro';
 
 const Container = styled.div`
   margin: 4rem auto;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   max-width: 600px;
   display: flex;
   flex-direction: column;
@@ -85,6 +85,7 @@ const header =
  
 const footer = 
   <footer>
+    <p><a href="https://giphy.com/explore/background">gifs source</a></p>
   </footer>;
 
 export default function Layout({children}) {
