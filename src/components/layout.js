@@ -75,7 +75,8 @@ const header =
     <StyledList>
       <li><Link to="/app">[app]</Link>--<Link to="/app2">[app2]</Link></li>
       <li><StyledButton onClick={() => openInNewTab('https://github.com/MarkDYabut/pomodoro/commits/master')}>See last changes here</StyledButton></li>
-      <li>Commit Branch: {gitInfo.branch}</li>
+      {/* <li>Commit Branch: {gitInfo.branch}</li> */}
+      <li>Commit Branch: master</li>
       {/* <li>Commit Tags {gitInfo.tags}</li> */}
       <li>Commit Date: {gitInfo.commit.date}</li>
       {/* <li>Commit Short Hash {gitInfo.commit.shortHash}</li> */}
