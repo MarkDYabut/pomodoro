@@ -54,6 +54,9 @@ export default function Home() {
     <Layout>
       <h1>App2</h1>
       <p>Efficiency timer and todo list app.</p>
+      <p>***Warning the change theme button for the todo list resets the state of the list.
+        <i>"It's a feature not a bug."</i>
+      </p>
       <Experiments>
         <h1>State: {status}</h1>
         <button onClick={handleStateButton}>Change State</button>
