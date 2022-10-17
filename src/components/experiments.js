@@ -27,18 +27,10 @@ function Experiments({children}) {
 
   return (
     <>
-      <div>
-        <h2>Experimental Themes</h2>
-        <p>sup</p>
-        <p>sup</p>
-        <p>sup</p>
-        <p>sup</p>
-      </div>
       <button onClick={handleClick}>change theme</button>
       {isActive && 
         <StyledDivDark>
           <StyledDiv id="test">
-            <p>what's your name</p>
             {children}
           </StyledDiv>
         </StyledDivDark>
@@ -46,7 +38,6 @@ function Experiments({children}) {
       {!isActive && 
         <StyledDivLight>
           <StyledDiv id="test">
-            <p>what's your name</p>
             {children}
           </StyledDiv>
         </StyledDivLight>
