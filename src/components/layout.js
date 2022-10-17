@@ -6,8 +6,9 @@ import Experiments from "./experiments"
 import GitInfo from 'react-git-info/macro';
 
 const Container = styled.div`
-  margin: 4rem auto;
-  padding-bottom: 100px;
+  margin: 1rem auto;
+  // padding-bottom: 1rem auto;
+  // padding-top: -40px;
   max-width: 600px;
   display: flex;
   flex-direction: column;
