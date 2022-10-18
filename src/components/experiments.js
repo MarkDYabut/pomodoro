@@ -12,7 +12,7 @@ const StyledDivLight = styled.div`
   
   const StyledDivDark = styled.div`
   background-image: linear-gradient(#2b5876,#4e4376);
-  background-image: url('https://media2.giphy.com/media/7AtHoQ9XWbpwLRxs0t/giphy.gif?cid=ecf05e4732xyhzam6bx9sir387mcadfh0qp1985or00innk5&rid=giphy.gif&ct=g');
+  background-image: url('https://media1.giphy.com/media/jyZok2Q0Yyn0QnUdgG/giphy.gif');
   color: white;
   border-radius: 15px;
 `;
